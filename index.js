@@ -6,7 +6,9 @@ a=Number.parseInt(a);
 while(a--){
   let user=prompt("select s,w or g");
 
-let comp=Math.floor(Math.random()*3)
+  
+  if(user=="s"||user=="w"||user=="g"){
+   let comp=Math.floor(Math.random()*3)
 let input=["s","w","g"][comp];
   console.log("computer :"+input ,"user :"+user);
  
@@ -34,5 +36,14 @@ let input=["s","w","g"][comp];
  else if(user==="w"&&input==="s"){
    console.log("computer won");
  }
+  }
+  else{
+    a++;
+    alert("you have selected wrong option please select correct once");
+   
+    
+  }
+
+
   
 }
